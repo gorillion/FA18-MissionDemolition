@@ -69,7 +69,7 @@ public class MissionDemolition : MonoBehaviour {
         {
             mode = GameMode.levelEnd;
             SwitchView("ShowBoth");
-            Invoke("nextLevel", 2f);
+            Invoke("NextLevel", 2f);
         }
     }
     void NextLevel()
@@ -100,7 +100,7 @@ public class MissionDemolition : MonoBehaviour {
                 break;
 
             case "Show Both":
-                FollowCam.POI = GameObject.Find("ViewBoth");
+                FollowCam.POI = GameObject.Find("View Both");
                 uitButton.text = "Show Slingshot";
                 break;
 
